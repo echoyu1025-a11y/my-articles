@@ -11,7 +11,7 @@
 这篇文章我们就来看一下这个在Git hub 上星标增长速度创下 GitHub AI 项目新纪录的自进化学习闭环、永久记忆、多平台网关兼容的 Hermes Agent 到底是什么，和openclaw有什么区别，怎么安装以及它能做些什么吧！
 Hermes Agent 仅用 2 个月就达成 5 万星，增长速度远超OpenClaw，成为 2026 年开源 AI 赛道的现象级项目。
 
-![图1](images/会自我进化的Hermes-Agent/01.png)
+![图1](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/01.png)
 
 ## 一、Hermes Agent 是什么？
 Hermes Agent 由 Nous Research 开发的自我进化的 AI 智能体。它是唯一一款内置学习闭环的智能体—，它能从经验中生成专属技能，在使用过程中优化这些技能，主动将知识永久保存，检索自己的过往对话，并跨会话构建出对你越来越深入的个人认知模型。
@@ -44,7 +44,7 @@ OpenClaw本质上是一个执行任务的工具。Hermes Agent 带有 MCP 服务
 #### 3.1.1、macOS 系统（苹果电脑，Intel/M1/M2/M3/M4 芯片通用）
 按下键盘上的 Command + 空格 ，调出搜索框，输入终端，点击打开
 
-![图2](images/会自我进化的Hermes-Agent/02.png)
+![图2](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/02.png)
 
 #### 3.1.2、Windows 系统（先装 WSL2，再打开终端）
 Windows 用户不能直接用 CMD/PowerShell 安装，必须先安装 WSL2（Linux 子系统），再在 WSL2 的终端里操作，否则会安装失败。
@@ -92,7 +92,7 @@ git --version
 
 3.2.1.2、如果终端输出了类似 git version 2.39.5 的版本号，说明你的电脑已经装了 Git，直接跳第三步；像我的这样就是之前已经安装过了
 
-![图3](images/会自我进化的Hermes-Agent/03.png)
+![图3](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/03.png)
 
 3.2.1.3、如果弹出提示【需要安装命令行开发者工具】，点击弹窗里的【安装】，等待安装完成（约 5-10 分钟，看网速）；
 #### 3.2.1.4、安装完成后，再次输入 git --version，输出版本号就说明安装成功了。
@@ -128,13 +128,13 @@ curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scri
 
 如果你的电脑上原来安装了OpenClaw，它会询问你是否把 OpenClaw 的数据迁移过来（如下图），你如果选择迁移就输入y，暂时不想迁移就输入N，后续想要迁移的时候可以随时进行手动迁移
 
-![图4](images/会自我进化的Hermes-Agent/04.png)
+![图4](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/04.png)
 
 ### 3.4、第四步、初始化配置
 #### 3.4.1、选择配置方式
 当出现下图内容时，则说明前面所有的下载、环境配置、依赖安装都完成了，进入到初始化配置环节，需要配置大模型和基础设置了。
 
-![图5](images/会自我进化的Hermes-Agent/05.png)
+![图5](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/05.png)
 
 我们看到 Quick setup 前面已经有绿色的圆点了，这是官方默认推荐的选项，新手推荐选这个
 
@@ -148,12 +148,12 @@ curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scri
 到了这一步我们该选择大模型了，新手推荐先选 OpenRouter，它内置200+款模型可以选择，从最强最贵的claude到很便宜的Qwen系列都有。
 是目前所有选项里最省心、中文最好、国内能用的选择，等后面熟悉了再选择如 Anthropic 等更强大的模型。
 
-![图6](images/会自我进化的Hermes-Agent/06.png)
+![图6](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/06.png)
 
 #### 3.4.3、获取密钥
 选择了 OpenRouter 模型之后，出现了这个画面就需要获取 API 密钥了
 
-![图7](images/会自我进化的Hermes-Agent/07.png)
+![图7](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/07.png)
 
 #### 3.4.3.1、获取OpenRouter API 密钥步骤：
 
@@ -171,24 +171,24 @@ curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scri
 
 OpenRouter 中含有很多模型，所以输入密钥之后我们要选择模型，刚开始安装不熟练可以先选 qwen 系的，后面多测试几轮，熟练了之后换到更好用的模型
 
-![图8](images/会自我进化的Hermes-Agent/08.png)
+![图8](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/08.png)
 
 #### 3.4.4、其他设置
 到了这一步，我们就可以配置到常用的消息软件，把 Set up messaging now 选中点击回车
 
-![图9](images/会自我进化的Hermes-Agent/09.png)
+![图9](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/09.png)
 
 这里有很多可以选择的平台，你可以根据你自己的需求选择想要配置的平台，我这里以飞书为例，选中飞书，点击回车
 
-![图10](images/会自我进化的Hermes-Agent/10.png)
+![图10](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/10.png)
 
 接下来输入Y，就可以进入 hermes 的聊天界面了
 
-![图11](images/会自我进化的Hermes-Agent/11.png)
+![图11](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/11.png)
 
 我在输入了Y之后遇到了下面的错误，经过搜索，说这是 macOS Sonoma/Sequoia 系统的已知官方兼容性 bug， 这个 bug 只影响 macOS 14 及以上版本，macOS 13及以下系统、Windows 和 Linux 用户不会遇到这个bug，可以正常启动
 
-![图12](images/会自我进化的Hermes-Agent/12.png)
+![图12](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/12.png)
 
 下面解决这个bug
 #### 3.4.5、macOS 14 及以上版本兼容启动方法
@@ -222,7 +222,7 @@ source ~/.zshrc
 #### 3.4.5.5、步骤 5：测试启动
 现在直接输入hermes，按回车，就能正常启动了！不会再出现那个报错了,启动后就是这个样子啦！你就可以给它发消息了。
 
-![图13](images/会自我进化的Hermes-Agent/13.png)
+![图13](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/13.png)
 
 注意：前七天不建议和他闲聊，或者只问你好，给它具体的任务，才能体现 AI 的能力，比如：
 运营向：帮我写一份小红书美妆产品的种草文案，主题是“早八人快速上妆技巧”，给3个标题+1个正文模板
@@ -231,7 +231,7 @@ source ~/.zshrc
 
 如果在使用过程中遇到下面的问题，说明需要先给账户充值才能用
 
-![图14](images/会自我进化的Hermes-Agent/14.png)
+![图14](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/14.png)
 
 ### 3.5、第五步：配置到飞书
 #### 3.5.1、登录飞书开放平台，创建应用
@@ -259,41 +259,41 @@ source ~/.zshrc
 #### 3.5.3.1、左侧菜单栏找到【权限管理】→「权限配置」。
 3.5.3.2、点击【开通权限】看着勾选，主要勾选接收信息和发送信息、获取信息一类的（大部分个人应用会自动通过，不用审核）：
 
-![图15](images/会自我进化的Hermes-Agent/15.png)
+![图15](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/15.png)
 
-![图16](images/会自我进化的Hermes-Agent/16.png)
+![图16](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/16.png)
 
 #### 3.5.3.3、开通了权限之后在事件与回顾那里也配置一下
 
-![图17](images/会自我进化的Hermes-Agent/17.png)
+![图17](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/17.png)
 
-![图18](images/会自我进化的Hermes-Agent/18.png)
+![图18](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/18.png)
 
 #### 3.5.3.4、在左边添加应用能力那里添加机器人
 
-![图19](images/会自我进化的Hermes-Agent/19.png)
+![图19](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/19.png)
 
 3.5.3.5、飞书这边都调试好了，来到 hermes agent 终端，输入你的需求，再把前面保存的App ID和App Secret 发给它
 
-![图20](images/会自我进化的Hermes-Agent/20.png)
+![图20](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/20.png)
 
 这时候它会让你确定那些权限是不是都开通了，飞书开发者平台的参数是不是设置好了，然后会让你提供user_id或者open_id，需要在api调试台那里找到
 
-![图21](images/会自我进化的Hermes-Agent/21.png)
+![图21](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/21.png)
 
-![图22](images/会自我进化的Hermes-Agent/22.png)
+![图22](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/22.png)
 
 #### 3.5.3.6、在左边找到版本管理与发布，设置一下版本号、更新说明然后点击保存，这样就发布了
 
-![图23](images/会自我进化的Hermes-Agent/23.png)
+![图23](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/23.png)
 
 #### 3.5.3.7、来到飞书，点击打开应用，你的飞书信息列表就会出现刚刚你创建的那个机器人对话框
 
-![图24](images/会自我进化的Hermes-Agent/24.png)
+![图24](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/24.png)
 
 经过很多次测试，直到收到这条消息才算是真正配置成功了
 
-![图25](images/会自我进化的Hermes-Agent/25.png)
+![图25](../引用的图片/03-Agent与前沿技术/会自我进化的Hermes-Agent/25.png)
 
 ## 四、Hermes Agent 可以做什么？
 装都装好了，大家肯定是希望可以用来做点什么，我也刚装上，还没有太多实践可以分享，这里就先分享一下国外AI大神 Julian Goldie 的最佳实践，看看他都把 Hermes Agent 用在了哪些地方。
